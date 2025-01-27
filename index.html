@@ -65,7 +65,7 @@
 
     /* Ensure the input has some padding to accommodate the label */
     .floating-label-input {
-      padding: 5px 30px 5px 15px;
+      padding: 5px 5px 5px 10px;
       position: relative;
     }
 
@@ -218,7 +218,7 @@
             <span class="icon icon-person mt-2 me-2"></span>
           </a>
           <a class="navbar-brand fs-4" href="https://chromewebstore.google.com/detail/ipfihnddjaepajgdamecijfdefikdgam"
-            target="_blank"> Gerador de Dados Fictícios </a>
+            target="_blank">Gerador de Dados Fictícios</a>
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarGDF"
             aria-controls="navbarGDF" aria-expanded="false" aria-label="Toggle navigation">
@@ -254,6 +254,34 @@
 
 
             <div class="row form-floating mb-5 p-3 bg-body rounded shadow-lg">
+
+              <h6 class="border-bottom pb-2 mb-4">teste</h6>
+
+              <div class="col-md-2 form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="gender-female" value="Feminino">
+                  <label class="form-check-label" for="gender-female">Feminino</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="gender-male" value="Masculino">
+                  <label class="form-check-label" for="gender-male">Masculino</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="gender" id="gender-intersex" value="Intersexo">
+                  <label class="form-check-label" for="gender-intersex">Intersexo</label>
+                </div>
+              </div>
+              
+              <div class="col-md-2 form-group">
+                <select class="form-select floating-label-input" id="gender-select" name="gender-select">
+                  <option value="" selected>Selecione</option>
+                  <option value="Feminino">Feminino</option>
+                  <option value="Masculino">Masculino</option>
+                  <option value="Intersexo">Intersexo</option>
+                </select>
+                <label class="form-label floating-label fw-semibold" for="gender-select">Gênero</label>
+              </div>
+
 
               <h6 class="border-bottom pb-2 mb-4">Identificação</h6>
               <div class="col-md-3  form-group">
